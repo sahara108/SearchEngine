@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13B85CA71CA523F600ADB422 /* SwiftString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B85CA61CA523F600ADB422 /* SwiftString.swift */; };
 		ABFEF2371CA397AE00BB6788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFEF2361CA397AE00BB6788 /* AppDelegate.swift */; };
 		ABFEF2391CA397AE00BB6788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFEF2381CA397AE00BB6788 /* ViewController.swift */; };
 		ABFEF23C1CA397AE00BB6788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFEF23A1CA397AE00BB6788 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13B85CA61CA523F600ADB422 /* SwiftString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftString.swift; sourceTree = "<group>"; };
 		ABFEF2331CA397AE00BB6788 /* SearchEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFEF2361CA397AE00BB6788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABFEF2381CA397AE00BB6788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13B85CA81CA523FB00ADB422 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				13B85CA61CA523F600ADB422 /* SwiftString.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		ABFEF22A1CA397AE00BB6788 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		ABFEF2351CA397AE00BB6788 /* SearchEngine */ = {
 			isa = PBXGroup;
 			children = (
+				13B85CA81CA523FB00ADB422 /* Classes */,
 				ABFEF2361CA397AE00BB6788 /* AppDelegate.swift */,
 				ABFEF2381CA397AE00BB6788 /* ViewController.swift */,
 				ABFEF23A1CA397AE00BB6788 /* Main.storyboard */,
@@ -199,6 +210,7 @@
 			files = (
 				ABFEF2391CA397AE00BB6788 /* ViewController.swift in Sources */,
 				ABFEF2371CA397AE00BB6788 /* AppDelegate.swift in Sources */,
+				13B85CA71CA523F600ADB422 /* SwiftString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +400,7 @@
 				ABFEF2521CA397AE00BB6788 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABFEF2531CA397AE00BB6788 /* Build configuration list for PBXNativeTarget "SearchEngineTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +409,7 @@
 				ABFEF2551CA397AE00BB6788 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
