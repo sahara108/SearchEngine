@@ -35,13 +35,24 @@ public extension String {
         }
         
         func isLike(string: String) -> Bool {
-            let pattern = string.makePatternFromString()
+            
+            // search with accents
+            var pattern = string.makePatternFromString()
             if self.rangeOfString(pattern, options: .RegularExpressionSearch) != nil {
                 return true
             }
             
+            // search without accents of the target
             var tmp = self
             tmp.removeAccents()
+            if tmp.rangeOfString(pattern, options: .RegularExpressionSearch) != nil {
+                return true
+            }
+            
+            // search without accents both of the target and search string
+            var tmpString = string
+            tmpString.removeAccents()
+            pattern = tmpString.makePatternFromString()
             if tmp.rangeOfString(pattern, options: .RegularExpressionSearch) != nil {
                 return true
             }
@@ -49,7 +60,7 @@ public extension String {
             // char đ exception
             if self.rangeOfString("đ") != nil {
                 // replace đ to d
-                if self.stringByReplacingOccurrencesOfString("đ", withString: "d").rangeOfString(pattern, options: .RegularExpressionSearch) != nil {
+                if tmpString.stringByReplacingOccurrencesOfString("đ", withString: "d").rangeOfString(pattern, options: .RegularExpressionSearch) != nil {
                     return true
                 }
             }
